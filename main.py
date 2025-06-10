@@ -88,7 +88,7 @@ def main():
     # Train final model
     best_params = study.best_params
     final_model = create_model(
-        input_size=X_train.shape[-1],
+        input_size=x_train.shape[-1],
         hidden_size=best_params['hidden_size'],
         num_layers=best_params['num_layers'],
         dropout=best_params['dropout'],
